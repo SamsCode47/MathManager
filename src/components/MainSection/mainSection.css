@@ -1,0 +1,27 @@
+.mm__mainSection{
+    position: absolute;
+    right: 0;
+    width: calc(100vw - var(--nav-size) - 17px);
+    transition: all 1s ease-in-out;
+}
+.mm__mainSection.thick{
+    width: calc((100vw - var(--nav-size) - 17px) + 15vw);
+    transition: all 1s ease-in-out;
+}
+.mm__mainSection--title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    background-color: var(--dark-blue);
+    color: var(--grey);
+}
+
+@media screen and (max-width: 1050px){
+.mm__mainSection{
+    width: calc(100vw - 17px);
+}
+.mm__mainSection.thick{
+    width: calc(100vw - 17px);
+}
+}

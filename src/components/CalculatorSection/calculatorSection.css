@@ -1,0 +1,15 @@
+.CalculatorSection{
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 175px;
+}
+.CalculatorSection_title{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 2em;
+    margin-bottom: 120px;
+}

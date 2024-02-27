@@ -1,0 +1,128 @@
+.mm__navbar{
+    background-color: var(--grey);
+    position: fixed;
+    height: 100vh;
+    width: var(--nav-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 1vh;
+    transition: all 1s ease-in-out;
+}
+.mm__navbar.thin{
+    width: calc(var(--nav-size) - 15vw);
+    transition: all 1s ease-in-out;
+}
+.mm__navbar--header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.mm__navbar--header > img{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    transition: all 1s ease-in-out;
+    animation: turn 5s;
+}
+.mm__navbar--header > p{
+    font-size: 2rem;
+}
+.mm__navbar--links_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mm__navbar--links > a{
+    text-decoration: none;
+    color: #040c18;
+    display: flex;
+    align-items: center;
+    padding: .5em 2em;
+    gap: 20px;
+    border-radius: 1rem;
+    transition: none;
+}
+.mm__navbar--links > a:hover{
+    background-color: #484c55;
+    transition: none;
+}
+img{
+    width: 3rem;
+    height: 3rem;
+}
+.mm__navbar--links-seperator{
+    background-color: #000000;
+    width: 10vw;
+    height: 3px;
+    border-radius: 5rem;
+    margin: .5rem;
+    transition: all 1s ease-in-out;
+}
+.mm__navbar--smallScreen{
+    display: none;
+}
+.mm__navbar--smallScreen_overlay{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: var(--blue);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mm__navbar--smallScreen_links-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+.mm__navbar--smallScreen_links > a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: .5em 2em;
+    gap: 20px;
+    border-radius: 1rem;
+    transition: none;
+}
+.mm__navbar--smallScreen_menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 5;
+    margin: 20px;
+}
+.turn{
+    transform: rotate(180deg);
+}
+.shrink{
+    width: 0px;
+}
+
+@keyframes turn {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-16deg); }
+    20% { transform: rotate(4deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(4deg); }
+    50% { transform: rotate(-16deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-16deg); }
+    80% { transform: rotate(4deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media screen and (max-width: 1050px){
+.mm__navbar{
+    display: none;
+}
+.mm__navbar--smallScreen{
+    display: flex;
+}
+
+}

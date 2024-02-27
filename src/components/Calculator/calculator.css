@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Overpass&family=Poppins:wght@600&display=swap');
+.Calculator{
+    height: 34em;
+    width: 20em;
+    background-color: var(--grey);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Calculator_display{
+    width: 17rem;
+    height: 7rem;
+    background-color: var(--dark-grey);
+    padding: 1em 1em;
+    border-radius: 10px;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+}
+.Calculator_buttons{
+    width: 18.5rem;
+    height: 22rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    user-select: none
+}
+.Calculator-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 4px 0px var(--dark-grey);
+}
+.Calculator-button:hover{
+    filter: brightness(125%);
+    cursor: pointer;
+}
+.Calculator-button:nth-child(17){
+    grid-column: 1/3;
+}

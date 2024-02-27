@@ -1,0 +1,197 @@
+.GaußMethod{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.Gaußmethod_main{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 15rem;
+    gap: 50px;
+    align-items: flex-end;
+    transition: all 1s ease-in-out;
+}
+.GaußMethod_table{
+    width: fit-content;
+}
+.GaußMethod_table-head{
+    display: flex;
+    flex-direction: row;
+    gap: calc( 50px / var(--mid-screen));
+    margin-bottom: calc( 10px / var(--mid-screen));
+}
+.GaußMethod_table-size-button{
+    padding: calc( 10px / var(--mid-screen));
+    background-color: var(--dark-grey);
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+}
+.GaußMethod_table-size-button:nth-child(1){
+    border-radius: calc( 1.5rem / var(--mid-screen)) 0 0 calc( 1.5rem / var(--mid-screen));
+}
+.GaußMethod_table-size-button:nth-last-child(1){
+    border-radius: 0 calc( 1.5rem / var(--mid-screen)) calc( 1.5rem / var(--mid-screen)) 0;
+}
+.GaußMethod_table-size-button:hover{
+    box-sizing: content-box;
+    cursor: pointer;
+    outline: 1.5px solid #fff;
+}
+.GaußMethod_table-submit{
+    margin-bottom: calc(var(--table-size) * 5rem / 2);
+    display: flex;
+    gap: 10px;
+}
+.GaußMethod_table-clear,
+.GaußMethod_table-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-blue);
+    padding: calc( 10px / var(--mid-screen));
+    border-radius: 2em;
+    cursor: pointer;
+    height: fit-content
+}
+.GaußMethod_table-clear:hover{
+    filter: brightness(120%);
+}
+.GaußMethod_table-variables{
+    display: flex;
+    gap: calc(calc( 6rem / var(--mid-screen)) / 2 + calc(1rem / var(--mid-screen)));
+    padding: calc(1rem / var(--mid-screen)) calc(3rem / var(--mid-screen) / 2);
+}
+.GaußMethod_variables-var{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc( 2rem / var(--mid-screen));
+    height: calc( 2rem / var(--mid-screen));
+    background-color: var(--dark-grey);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.GaußMethod_table-cells{
+    display: grid;
+    grid-template-columns: repeat(var(--table-size), calc( 6rem / var(--mid-screen))) 20px calc( 6rem / var(--mid-screen));
+    width: calc( 37rem / var(--mid-screen));
+}
+.GaußMethod_table-result-cells{
+    display: grid;
+    grid-template-columns: repeat(var(--result-table-size), calc( 6rem / var(--mid-screen))) 20px calc( 6rem / var(--mid-screen));
+    width: calc( 37rem / var(--mid-screen));
+}
+.GaußMethod_table-cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( 5rem / var(--mid-screen)) ;
+    height: calc( 5rem / var(--mid-screen));
+    text-align: center;
+    background-color: var(--mid-grey);
+    border: none;
+    border-radius: 5px;
+    font-size: calc( 25px / var(--mid-screen));
+    color: rgb(218, 206, 206);
+    overflow-x: auto;
+}
+.GaußMethod_table-cell:hover,
+.GaußMethod_variables-var:hover{
+    border: 1.5px solid #fff;
+}
+.GaußMethod_table-cell:focus,
+.GaußMethod_variables-var:focus{
+    border: 3px solid #fff;
+    outline: none;
+}
+.GaußMethod_table-seperator{
+    width: 5px;
+    height: calc( 6rem / var(--mid-screen));
+    background-color:var(--dark-grey);
+}
+.GaußMethod_table-seperator:nth-last-child(2){
+    height: calc( 5rem / var(--mid-screen) + 1);
+}
+.error{
+    border: 1px solid red;
+    animation: shake .5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px) rotate(0deg); }
+    10% { transform: translate(-1px) rotate(-1deg); }
+    20% { transform: translate(-3px) rotate(1deg); }
+    30% { transform: translate(3px) rotate(0deg); }
+    40% { transform: translate(1px,) rotate(1deg); }
+    50% { transform: translate(-1px) rotate(-1deg); }
+    60% { transform: translate(-3px) rotate(0deg); }
+    70% { transform: translate(3px) rotate(-1deg); }
+    80% { transform: translate(-1px) rotate(1deg); }
+    90% { transform: translate(1px) rotate(0deg); }
+    100% { transform: translate(1px,) rotate(-1deg); }
+}
+  
+/*@keyframes inAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+  
+@keyframes outAnimation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+}
+*/
+  
+  
+
+@media screen and (max-width: 1050px){
+    :root{
+        --mid-screen: 1.3 !important;
+    }
+    .Gaußmethod_main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .GaußMethod_table-seperator:nth-last-child(2){
+        height: 3rem;
+    }
+    .GaußMethod_variables-var{
+        font-size: 15px;
+    }
+    .GaußMethod_table-head{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: -30px;
+    }
+    .GaußMethod_table-size-button{
+        margin: 0 10px;
+    }
+    .GaußMethod_table-clear{
+        font-size: 12.5px;
+    }
+    .GaußMethod_table{
+        position: relative;
+    }
+    .GaußMethod_table-submit{
+        margin-bottom: 1rem;
+    }
+}

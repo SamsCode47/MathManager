@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Poppins:wght@600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+  scroll-behavior: smooth;
+}
+:root{
+  --dark-blue: #040c18;
+  --blue: #142030;
+  --light-blue: #1057ca;
+  --grey: #8c94a8;
+  --mid-grey: #5e6169;
+  --dark-grey: #313235;
+  --orange: #e07f46;
+  --nav-size: 22vw;
+  --table-size: 3;
+  --result-table-size: 3;
+  --mid-screen: 1;
+  overflow-x: hidden;
+  background-color: var(--dark-blue)
+}
+.section{
+  background-color: var(--dark-blue);
+  width: inherit;
+  min-height: fit-content;
+  color: white
+}
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}

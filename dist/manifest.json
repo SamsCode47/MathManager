@@ -1,0 +1,96 @@
+{
+  "index.css": {
+    "file": "assets/index-a92161c2.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "assets": [
+      "assets/logo-ea09a044.png",
+      "assets/IMG_0884-5cd5c3b2.jpg",
+      "assets/IMG_0885-aa7642b5.jpg",
+      "assets/IMG_0886-551ed836.jpg",
+      "assets/IMG_0887-097b7ff9.jpg",
+      "assets/IMG_0888-1908b8be.jpg",
+      "assets/IMG_0889-01797e6f.jpg",
+      "assets/IMG_0890-2e805f25.jpg",
+      "assets/IMG_0891-9aa43716.jpg",
+      "assets/IMG_0892-6a1fca8d.jpg",
+      "assets/IMG_0893-04e5de30.jpg",
+      "assets/IMG_0894-489e36d4.jpg",
+      "assets/IMG_0895-cb0fe7d6.jpg",
+      "assets/IMG_0896-294aae4c.jpg",
+      "assets/IMG_0897-e219d28f.jpg",
+      "assets/IMG_0898-e2a06643.jpg"
+    ],
+    "css": [
+      "assets/index-a92161c2.css"
+    ],
+    "file": "assets/index-b1683822.js",
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "src/assets/logo.png": {
+    "file": "assets/logo-ea09a044.png",
+    "src": "src/assets/logo.png"
+  },
+  "src/assets/memes/IMG_0884.jpg": {
+    "file": "assets/IMG_0884-5cd5c3b2.jpg",
+    "src": "src/assets/memes/IMG_0884.jpg"
+  },
+  "src/assets/memes/IMG_0885.jpg": {
+    "file": "assets/IMG_0885-aa7642b5.jpg",
+    "src": "src/assets/memes/IMG_0885.jpg"
+  },
+  "src/assets/memes/IMG_0886.jpg": {
+    "file": "assets/IMG_0886-551ed836.jpg",
+    "src": "src/assets/memes/IMG_0886.jpg"
+  },
+  "src/assets/memes/IMG_0887.jpg": {
+    "file": "assets/IMG_0887-097b7ff9.jpg",
+    "src": "src/assets/memes/IMG_0887.jpg"
+  },
+  "src/assets/memes/IMG_0888.jpg": {
+    "file": "assets/IMG_0888-1908b8be.jpg",
+    "src": "src/assets/memes/IMG_0888.jpg"
+  },
+  "src/assets/memes/IMG_0889.jpg": {
+    "file": "assets/IMG_0889-01797e6f.jpg",
+    "src": "src/assets/memes/IMG_0889.jpg"
+  },
+  "src/assets/memes/IMG_0890.jpg": {
+    "file": "assets/IMG_0890-2e805f25.jpg",
+    "src": "src/assets/memes/IMG_0890.jpg"
+  },
+  "src/assets/memes/IMG_0891.jpg": {
+    "file": "assets/IMG_0891-9aa43716.jpg",
+    "src": "src/assets/memes/IMG_0891.jpg"
+  },
+  "src/assets/memes/IMG_0892.jpg": {
+    "file": "assets/IMG_0892-6a1fca8d.jpg",
+    "src": "src/assets/memes/IMG_0892.jpg"
+  },
+  "src/assets/memes/IMG_0893.jpg": {
+    "file": "assets/IMG_0893-04e5de30.jpg",
+    "src": "src/assets/memes/IMG_0893.jpg"
+  },
+  "src/assets/memes/IMG_0894.jpg": {
+    "file": "assets/IMG_0894-489e36d4.jpg",
+    "src": "src/assets/memes/IMG_0894.jpg"
+  },
+  "src/assets/memes/IMG_0895.jpg": {
+    "file": "assets/IMG_0895-cb0fe7d6.jpg",
+    "src": "src/assets/memes/IMG_0895.jpg"
+  },
+  "src/assets/memes/IMG_0896.jpg": {
+    "file": "assets/IMG_0896-294aae4c.jpg",
+    "src": "src/assets/memes/IMG_0896.jpg"
+  },
+  "src/assets/memes/IMG_0897.jpg": {
+    "file": "assets/IMG_0897-e219d28f.jpg",
+    "src": "src/assets/memes/IMG_0897.jpg"
+  },
+  "src/assets/memes/IMG_0898.jpg": {
+    "file": "assets/IMG_0898-e2a06643.jpg",
+    "src": "src/assets/memes/IMG_0898.jpg"
+  }
+}

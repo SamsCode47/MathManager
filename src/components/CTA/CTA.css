@@ -1,0 +1,30 @@
+.CTA-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    width: 50em;
+    gap: 1.5em;
+}
+.CTA-Title{
+    color: grey;
+}
+.CTA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: inherit;
+    padding: 1em;
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%) ;
+    border-radius: 20px;
+}
+.CTA-text{
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 90%);
+}
+.CTA-button{
+    padding: 5px 20px;
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white ;
+}
