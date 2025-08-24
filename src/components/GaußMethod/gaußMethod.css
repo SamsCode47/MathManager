@@ -43,7 +43,7 @@
 .GaußMethod_table-submit{
     margin-bottom: calc(var(--table-size) * 5rem / 2);
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 .GaußMethod_table-clear,
 .GaußMethod_table-submit{
